@@ -19,10 +19,17 @@ npm install --save plover-assets-css
 
 ```css
 
-.icon__back {
-  // 引入common模块的back图片，所在模块目录为common/assets/img/icons/back.png
-  background-image: url('common:icons/back.png');
+.staBack {
+    background-color: #F4F4F4;
+    padding: 25px;
 }
+.staBack .money {
+    color: #F68354;
+}
+压缩后
+
+.staBack{background-color:#f4f4f4;padding:25px}.staBack .money{color:#f68354}
+
 ```
 
 [npm-image]: https://img.shields.io/npm/v/plover-assets-css.svg?style=flat-square
