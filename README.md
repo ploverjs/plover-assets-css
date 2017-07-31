@@ -18,7 +18,7 @@ npm install --save plover-assets-css
 ## Usage
 
 ```css
-
+压缩前
 .staBack {
     background-color: #F4F4F4;
     padding: 25px;
@@ -27,9 +27,14 @@ npm install --save plover-assets-css
     color: #F68354;
 }
 压缩后
-
 .staBack{background-color:#f4f4f4;padding:25px}.staBack .money{color:#f68354}
 
+压缩前
+body {
+  background: url(../img/bg.png);
+}
+压缩后
+body{background:url(/g/css-test/img/bg-4e1243bd22.png)}
 ```
 
 [npm-image]: https://img.shields.io/npm/v/plover-assets-css.svg?style=flat-square
