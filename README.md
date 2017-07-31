@@ -39,8 +39,8 @@ body{background:url(/g/css-test/img/bg-4e1243bd22.png)}
 
 [npm-image]: https://img.shields.io/npm/v/plover-assets-css.svg?style=flat-square
 [npm-url]: https://www.npmjs.com/package/plover-assets-css
-[travis-image]: https://img.shields.io/travis/yan170772286/plover-assets-css/master.svg?style=flat-square
-[travis-url]: https://travis-ci.org/yan170772286/plover-assets-css
-[coveralls-image]: https://img.shields.io/codecov/c/github/yan170772286/plover-assets-css.svg?style=flat-square
-[coveralls-url]: https://codecov.io/github/yan170772286/plover-assets-css?branch=master
+[travis-image]: https://img.shields.io/travis/web17077/plover-assets-css/master.svg?style=flat-square
+[travis-url]: https://travis-ci.org/web17077/plover-assets-css
+[coveralls-image]: https://img.shields.io/codecov/c/github/web17077/plover-assets-css.svg?style=flat-square
+[coveralls-url]: https://codecov.io/github/web17077/plover-assets-css?branch=master
 
