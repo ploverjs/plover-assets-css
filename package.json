@@ -1,6 +1,6 @@
 {
   "name": "plover-assets-css",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "plover plugin for compile  css",
   "main": "lib/index",
   "scripts": {
@@ -34,12 +34,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/web17077/plover-assets-css.git"
+    "url": "git+https://github.com/ploverjs/plover-assets-css.git"
   },
   "author": "170772286@qq.com",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/web17077/plover-assets-css/issues"
+    "url": "https://github.com/ploverjs/plover-assets-css/issues"
   },
-  "homepage": "https://github.com/web17077/plover-assets-css#readme"
+  "homepage": "https://github.com/ploverjs/plover-assets-css#readme"
 }
