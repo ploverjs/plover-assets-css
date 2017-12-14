@@ -1,7 +1,8 @@
 language: node_js
 node_js:
-  - "5"
-  - "4"
+  - stable
+  - 8
+  - 7.6
 script: "npm run ci"
 after_script: "npm install codecov && cat ./coverage/lcov.info | codecov"
 
