@@ -29,7 +29,10 @@ describe('css-handler', function() {
     },
 
     settings: {
-      applicationRoot: root
+      applicationRoot: root,
+      assets: {
+        enableConcat: true
+      }
 
     },
 
@@ -37,9 +40,9 @@ describe('css-handler', function() {
   };
 
 
-  function* compile(path) {
+  function* compile(path, opt = options) {
     const fixture = createFixture(path);
-    return yield compileCss(fixture.path, fixture.body, info, options);
+    return yield compileCss(fixture.path, fixture.body, info, opt);
   }
 
 
@@ -82,6 +85,18 @@ describe('css-handler', function() {
       let css = yield* compile('css/filter-url.css');
       css = css.replace(/\?_=\d+/g, '');
       const fixture = createFixture('css/filter-url.min.css');
+      const expect = fixture.body.replace(/\n/g, '');
+      css.should.be.equal(expect);
+    });
+  });
+
+  it('relative url will not be transform to absolute path', function() {
+    return co(function* () {
+      const opt = Object.assign({}, options);
+      opt.settings.assets.enableConcat = false;
+      let css = yield* compile('css/no-filter-url.css', opt);
+      css = css.replace(/\?_=\d+/g, '');
+      const fixture = createFixture('css/no-filter-url.min.css');
       const expect = fixture.body.replace(/\n/g, '');
       css.should.be.equal(expect);
     });
